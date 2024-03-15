@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y \
         wkhtmltopdf \
     && pecl install yaf \
     && pecl install mongodb \
-    && pecl install xdebug \
+    && pecl install xdebug-3.0.4 \
     && docker-php-ext-enable yaf mongodb xdebug \
     && docker-php-ext-install pcntl bcmath
 
