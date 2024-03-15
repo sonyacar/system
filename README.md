@@ -17,6 +17,10 @@ The system is developed by BillRun Technologies Ltd., a company committed to sup
 ## Installation
 Install BillRun by configuring:
 
+### Set default password
+1. Generate a password hash using php password_hash function (can do this online)
+2. Paste the hashed password into the first_users.json file
+
 ### Docker Configuration
 
 To start the Billrun application for testing purposes using Docker and Docker Compose:
@@ -26,6 +30,7 @@ To start the Billrun application for testing purposes using Docker and Docker Co
 ```bash
 docker-compose -f docker-compose-php74.yml up
 ```
+Login at http://localhost:8074 with username admin, password you generated above.
 
 2. Create the log file to overcome permission issues and crashes:
 
